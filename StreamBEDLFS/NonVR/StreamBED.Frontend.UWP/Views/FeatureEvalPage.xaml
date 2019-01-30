@@ -1,0 +1,291 @@
+﻿<Page
+    x:Class="StreamBED.Frontend.UWP.Views.FeatureEvalPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:StreamBED.Frontend.UWP.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:model="using:StreamBED.Frontend.UWP.Models"
+    mc:Ignorable="d"
+    Background="#d9d9d9">
+
+    <Grid x:Name="layoutRoot">
+        <Pivot x:Name="layoutPivot"
+               SelectionChanged="LayoutPivot_SelectionChanged">
+            <PivotItem Margin="0, -16, 0, 0">
+                <Grid x:Name="introRoot" 
+              Background="White">
+                    <Pivot x:Name="pivotRoot"
+                   Margin="0, 0, 0, 112"
+                   IsHitTestVisible="False"
+                   SelectionChanged="PivotRoot_SelectionChanged">
+                        <PivotItem>
+                            <TextBlock Foreground="Black"
+                               FontSize="36"
+                               TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"
+                               Margin="270, 0">
+                        Great job selecting the best image for each feature!
+                            </TextBlock>
+                        </PivotItem>
+
+                        <PivotItem>
+                            <TextBlock Foreground="Black"
+                               FontSize="36"
+                               TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"
+                               Margin="270, 0">
+                        In the next section, you will compare the photos of the features you selected to a water habit protocol.
+                            </TextBlock>
+                        </PivotItem>
+                    </Pivot>
+
+                    <Button Style="{StaticResource RoundedButton}" 
+                x:Name="nextButton" 
+                Background="#EDEDED"
+                Foreground="Black"
+                FontSize="24"
+                VerticalAlignment="Bottom" 
+                HorizontalAlignment="Center"
+                Height="64"
+                Width="200"
+                Margin="0, 0, 0, 48"
+                Click="NextButton_Click">
+                        Next
+                    </Button>
+                </Grid>
+            </PivotItem>
+
+            <PivotItem Margin="0, 59, 0, 0">
+                <ScrollViewer>
+                    <StackPanel HorizontalAlignment="Stretch"
+                                Width="1200">
+
+                        <StackPanel x:Name="epifaunalStack"
+                                    Background="White"
+                                    Margin="0, 25, 0, 0"
+                                    CornerRadius="8"
+                                    Tapped="EpifaunalSubstrate_Tapped">
+                            <Grid Height="75">
+                                <TextBlock Foreground="Black"
+                                           FontSize="26"
+                                           FontWeight="Bold"
+                                           TextWrapping="Wrap"
+                                           TextAlignment="Center"
+                                           VerticalAlignment="Center"
+                                           HorizontalAlignment="Center"
+                                           Text="Epifaunal Substrate"
+                                           Margin="15"/>
+
+                                <Image Source="/Assets/ProtocolAssets/rock.png"
+                                       Height="50"
+                                       Width="50"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Left"
+                                       Margin="15"/>
+                            </Grid>
+
+                            <Image Source="/Assets/ProtocolAssets/Epifaunal.png"/>
+                        </StackPanel>
+
+                        <StackPanel x:Name="bankStack"
+                                    Background="White"
+                                    Margin="0, 25, 0, 25"
+                                    CornerRadius="8"
+                                    Tapped="BankStability_Tapped">
+                            <Grid Height="75">
+                                <TextBlock Foreground="Black"
+                                           FontSize="26"
+                                           FontWeight="Bold"
+                                           TextWrapping="Wrap"
+                                           TextAlignment="Center"
+                                           VerticalAlignment="Center"
+                                           HorizontalAlignment="Center"
+                                           Text="Bank Stability"
+                                           Margin="15"/>
+
+                                <Image Source="/Assets/ProtocolAssets/tree.png"
+                                       Height="50"
+                                       Width="50"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Left"
+                                       Margin="15"/>
+                            </Grid>
+
+                            <Image Source="/Assets/ProtocolAssets/Bank.png"/>
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+
+            <PivotItem Margin="0, 59, 0, 0">
+                <Grid>
+                    <ListView x:Name="listViewRoot"
+                              SelectionMode="None"                  
+                              HorizontalAlignment="Stretch">
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                            </Style>
+                        </ListView.ItemContainerStyle>
+
+                        <ListView.ItemTemplate>
+                            <DataTemplate x:DataType="model:FeatureDataModel">
+                                <StackPanel>
+                                    <Border BorderBrush="#d9d9d9" 
+                                CornerRadius="8,8,8,8" 
+                                BorderThickness="8,8,8,8"
+                                Margin="150, 12.5, 150, 12.5"
+                                Width="1200">
+                                        <StackPanel x:Name="templateRoot"
+                                                    Background="#EBEBEB"
+                                                    Tapped="TemplateRoot_Tapped">
+                                            <Grid x:Name="titleGrid"
+                                                  Height="75"
+                                                  Background="White">
+                                                <TextBlock x:Name="titleBlock"
+                                                           Foreground="Black"
+                                                           FontSize="30"
+                                                           FontWeight="Bold"
+                                                           TextWrapping="Wrap"
+                                                           TextAlignment="Center"
+                                                           VerticalAlignment="Center"
+                                                           HorizontalAlignment="Center"
+                                                           Text="{x:Bind Keyword.Content, Converter={StaticResource                                     UpperCaseConverter}}"/>
+
+                                                <FontIcon FontFamily="Segoe MDL2 Assets"
+                                                          Foreground="Black"
+                                                          FontSize="45"
+                                                          VerticalAlignment="Center" 
+                                                          HorizontalAlignment="Right"
+                                                          Margin="15"
+                                                          Height="75"
+                                                          Width="75"
+                                                          Visibility="{x:Bind Visibility}"
+                                                          Glyph="&#xE73E;"/>
+                                            </Grid>
+
+                                        </StackPanel>
+                                    </Border>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                    <Button Style="{StaticResource RoundedButton}" 
+                            x:Name="nextProtocolButton"
+                            FontFamily="Segoe MDL2 Assets"
+                            Background="#EDEDED"
+                            Foreground="Black"
+                            FontSize="24"
+                            VerticalAlignment="Top" 
+                            HorizontalAlignment="Right"
+                            Margin="15"
+                            Height="64"
+                            Width="64"
+                            Click="NextProtocolButton_Click">
+                        &#xE72A;
+                    </Button>
+                 
+                </Grid>
+            </PivotItem>
+
+            <PivotItem Margin="0, 59, 0, 0">
+                <Frame x:Name="assessmentFrame"/>
+            </PivotItem>
+        </Pivot>
+
+        <Grid x:Name="navBar"
+              Height="75"
+              Background="White"
+              VerticalAlignment="Top"
+              Margin="0, 32, 0, 0"
+              Visibility="Visible">
+            <StackPanel Orientation="Horizontal"
+                        Margin="15">
+                <Border BorderThickness="0, 0, 2.5, 0" 
+                        BorderBrush="Gray"
+                        Margin="0, 0, 15, 0">
+                    <TextBlock x:Name="evalTitle"
+                               Foreground="Black"
+                               FontSize="24"
+                               FontWeight="Bold"
+                               TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Left"
+                               Margin="0, 0, 15, 0"
+                               Text="FEATURE EVALUATION"
+                               Tapped="EvalTitle_Tapped"/>
+                </Border>
+
+                <Border x:Name="protocolBlock" 
+                        BorderThickness="0, 0, 2.5, 0" 
+                        BorderBrush="Gray"
+                        Margin="0, 0, 15, 0">
+                    <TextBlock x:Name="protocolTitle"
+                               Foreground="Black"
+                               FontSize="24"
+                               FontWeight="Bold"
+                               TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Left"
+                               Margin="0, 0, 15, 0"
+                               Text="EPIFAUNAL SUBSTRATE"
+                               Tapped="ProtocolTitle_Tapped"/>
+                </Border>
+
+                <Border x:Name="featureBlock"
+                        BorderThickness="0" 
+                        BorderBrush="Gray"
+                        Margin="0, 0, 15, 0">
+                    <TextBlock x:Name="featureTitle"
+                               Foreground="Black"
+                               FontSize="24"
+                               FontWeight="Bold"
+                               TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Left"
+                               Margin="0, 0, 15, 0"
+                               Text="STEEP BANK"/>
+                </Border>
+            </StackPanel>
+
+            <FontIcon x:Name="nextImageButton"
+                      FontFamily="Segoe MDL2 Assets"
+                      Foreground="Black"
+                      FontSize="30"
+                      VerticalAlignment="Center" 
+                      HorizontalAlignment="Right"
+                      Margin="15"
+                      Height="75"
+                      Width="75"
+                      Visibility="Collapsed"
+                      Glyph="&#xE72A;"
+                      Tapped="NextImageButton_Tapped"/>
+
+        </Grid>
+
+        <Grid x:Name="titleBar"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Top"
+              Height="32">
+            <Grid.Background>
+                <SolidColorBrush Color="Black" Opacity="0.2"/>
+            </Grid.Background>
+
+            <TextBlock Text="StreamBED"
+                       Foreground="Black"
+                       FontSize="14"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Margin="15,0,0,1"/>
+        </Grid>
+    </Grid>
+</Page>

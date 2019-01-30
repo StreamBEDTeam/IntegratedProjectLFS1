@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <protocol name="EpifaunalSubstrateModel">
+    <feature name="Cobble">
+      <image score="0" ref="ms-appx:///Assets/EpifaunalSubstrate/Cobble/0_C.png" detail="ms-appx:///Assets/EpifaunalSubstrate/Cobble/0_BW.png">
+        • No cobble in the stream
+        • No vegetation on cobble (least stable)
+        • No cobble partially submerged in the water  (no colonization spots for fish/insects)
+      </image>
+      <image score="5" ref="ms-appx:///Assets/EpifaunalSubstrate/Cobble/5_C.png" detail="ms-appx:///Assets/EpifaunalSubstrate/Cobble/5_BW.png">
+        • Few cobble in the stream
+        • Little vegetation on cobble
+        • Few cobble partially submerged in the water
+      </image>
+      <image score="10" ref="ms-appx:///Assets/EpifaunalSubstrate/Cobble/10_C.png" detail="ms-appx:///Assets/EpifaunalSubstrate/Cobble/10_BW.png">
+        • Some cobble in the stream
+        • Some vegetation/moss on cobble
+        • More cobble partially submerged in the water
+      </image>
+      <image score="15" ref="ms-appx:///Assets/EpifaunalSubstrate/Cobble/15_C.png" detail="ms-appx:///Assets/EpifaunalSubstrate/Cobble/15_BW.png">
+        • More cobble in the stream
+        • More vegetation/moss on cobble
+        • Many cobble partially submerged in the water
+      </image>
+      <image score="20" ref="ms-appx:///Assets/EpifaunalSubstrate/Cobble/20_C.png" detail="ms-appx:///Assets/EpifaunalSubstrate/Cobble/20_BW.png">
+        • Many cobble in the stream
+        • Most vegetation/moss on cobble
+        • Most cobble partially submerged in the water ( many colonization spots for insects and fish)
+      </image>
+    </feature>
+    
+    <feature name="SnagsLogs">
+      <image score="0" ref="ms-appx:///Assets/EpifaunalSubstrate/SnagsLogs/0_C.png" detail="ms-appx:///Assets/EpifaunalSubstrate/SnagsLogs/0_BW.png">
+        • No logs or snags/branches in the stream
+        • No vegetation/moss on logs/snags
+        • No logs/snags partially submerged in the water (no colonization spots for fish/insects)
+      </image>
+      <image score="5" ref="ms-appx:///Assets/EpifaunalSubstrate/SnagsLogs/5_C.png" detail="ms-appx:///Assets/EpifaunalSubstrate/SnagsLogs/5_BW.png">
+        • Few logs or snags/branches in or near the water
+        • Little vegetation/moss on logs/snags
+        • Few logs/snags partially submerged in the water
+      </image>
+      <image score="10" ref="ms-appx:///Assets/EpifaunalSubstrate/SnagsLogs/10_C.png" detail="ms-appx:///Assets/EpifaunalSubstrate/SnagsLogs/10_BW.png">
+        • Some logs or snags/branches in the stream
+        • Some vegetation/moss on logs/snags
+        • Some logs/snags partially submerged in the water
+      </image>
+      <image score="15" ref="ms-appx:///Assets/EpifaunalSubstrate/SnagsLogs/15_C.png" detail="ms-appx:///Assets/EpifaunalSubstrate/SnagsLogs/15_BW.png">
+        • Many logs and snags/branches in the stream
+        • More vegetation/moss on logs/snags
+        • More logs/snags partially submerged in the water
+      </image>
+      <image score="20" ref="ms-appx:///Assets/EpifaunalSubstrate/SnagsLogs/20_C.png" detail="ms-appx:///Assets/EpifaunalSubstrate/SnagsLogs/20_BW.png">
+        • Most logs on snags/branches in stream
+        • Most vegetation/moss on logs/snags
+        • Many logs/snags partially submerged in the water (many colonization spots for insects and fish)
+      </image>
+    </feature>
+    
+    <feature name="UndercutBanks">
+      <image score="0" ref="ms-appx:///Assets/EpifaunalSubstrate/UndercutBanks/0_C.png" detail="ms-appx:///Assets/EpifaunalSubstrate/UndercutBanks/0_BW.png">
+        • No snags /branches covering undercut
+        • Undercut not in the water (no colonization spots for fish/insects)
+        • No undercut in bank for fish and bugs to hide
+      </image>
+      <image score="5" ref="ms-appx:///Assets/EpifaunalSubstrate/UndercutBanks/5_C.png" detail="ms-appx:///Assets/EpifaunalSubstrate/UndercutBanks/5_BW.png">
+        • Few snags /branches covering undercut
+        • Small part of undercut not in the water
+        • Small undercut in bank for fish and bugs to hide
+      </image>
+      <image score="10" ref="ms-appx:///Assets/EpifaunalSubstrate/UndercutBanks/10_C.png" detail="ms-appx:///Assets/EpifaunalSubstrate/UndercutBanks/10_BW.png">
+        • Some snags /branches covering undercutSome of undercut in the water
+        • Some undercut in bank for fish and bugs to hide
+      </image>
+      <image score="15" ref="ms-appx:///Assets/EpifaunalSubstrate/UndercutBanks/15_C.png" detail="ms-appx:///Assets/EpifaunalSubstrate/UndercutBanks/15_BW.png">
+        • Many snags /branches covering undercut
+        • More of undercut in the water
+        • Bigger undercut in bank for fish and bugs to hide
+      </image>
+      <image score="20" ref="ms-appx:///Assets/EpifaunalSubstrate/UndercutBanks/20_C.png" detail="ms-appx:///Assets/EpifaunalSubstrate/UndercutBanks/20_BW.png">
+        • Most snags /branches covering undercut
+        • Most of undercut in the water ( many colonization spots for insects and fish)
+        • Biggest undercut in bank for fish and bugs to hide
+      </image>
+    </feature>
+    
+    <feature name="UnderwaterVegetation">
+      <image score="0" ref="ms-appx:///Assets/EpifaunalSubstrate/UnderwaterVegetation/0_C.png" detail="ms-appx:///Assets/EpifaunalSubstrate/UnderwaterVegetation/0_BW.png">
+        • No vegetation in or on the sides of the stream
+      </image>
+      <image score="5" ref="ms-appx:///Assets/EpifaunalSubstrate/UnderwaterVegetation/5_C.png" detail="ms-appx:///Assets/EpifaunalSubstrate/UnderwaterVegetation/5_BW.png">
+        • Little vegetation in or on the sides of the stream
+      </image>
+      <image score="10" ref="ms-appx:///Assets/EpifaunalSubstrate/UnderwaterVegetation/10_C.png" detail="ms-appx:///Assets/EpifaunalSubstrate/UnderwaterVegetation/10_BW.png">
+        • Some vegetation in or on the sides of the stream
+      </image>
+      <image score="15" ref="ms-appx:///Assets/EpifaunalSubstrate/UnderwaterVegetation/15_C.png" detail="ms-appx:///Assets/EpifaunalSubstrate/UnderwaterVegetation/15_BW.png">
+        • More vegetation in or on the sides of the stream
+      </image>
+      <image score="20" ref="ms-appx:///Assets/EpifaunalSubstrate/UnderwaterVegetation/20_C.png" detail="ms-appx:///Assets/EpifaunalSubstrate/UnderwaterVegetation/20_BW.png">
+        • A lot of vegetation in or on the sides of the stream
+      </image>
+    </feature>
+  </protocol>
+  
+  <protocol name="BankStabilityModel">
+    <feature name="BankFailure">
+      <image score="0" ref="ms-appx:///Assets/BankStability/BankFailure/0_C.png" detail="ms-appx:///Assets/BankStability/BankFailure/0_BW.png">
+        • Much of the bank has crumbled or fallen into the stream
+      </image>
+      <image score="4" ref="ms-appx:///Assets/BankStability/BankFailure/4_C.png" detail="ms-appx:///Assets/BankStability/BankFailure/4_BW.png">
+        • Some of the bank has crumbled or fallen into the stream
+      </image>
+      <image score="6" ref="ms-appx:///Assets/BankStability/BankFailure/6_C.png" detail="ms-appx:///Assets/BankStability/BankFailure/6_BW.png">
+        • A small part of bank has crumbled or fallen into the stream
+      </image>
+      <image score="10" ref="ms-appx:///Assets/BankStability/BankFailure/10_C.png" detail="ms-appx:///Assets/BankStability/BankFailure/10_BW.png">
+        • None of the bank has crumbled or fallen into the stream
+      </image>
+    </feature>
+    
+    <feature name="BankSlope">
+      <image score="0" ref="ms-appx:///Assets/BankStability/BankSlope/0_C.png" detail="ms-appx:///Assets/BankStability/BankSlope/0_BW.png">
+        • Very steep bank slope
+      </image>
+      <image score="4" ref="ms-appx:///Assets/BankStability/BankSlope/4_C.png" detail="ms-appx:///Assets/BankStability/BankSlope/4_BW.png">
+        • Somewhat steep bank slope
+      </image>
+      <image score="6" ref="ms-appx:///Assets/BankStability/BankSlope/6_C.png" detail="ms-appx:///Assets/BankStability/BankSlope/6_BW.png">
+        • Moderate bank slope
+      </image>
+      <image score="10" ref="ms-appx:///Assets/BankStability/BankSlope/10_C.png" detail="ms-appx:///Assets/BankStability/BankSlope/10_BW.png">
+        • Gentle or gradual bank slope
+      </image>
+    </feature>
+    
+    <feature name="BankVegetation">
+      <image score="0" ref="ms-appx:///Assets/BankStability/BankVegetation/0_C.png" detail="ms-appx:///Assets/BankStability/BankVegetation/0_BW.png">
+        • No vegetation on bank
+      </image>
+      <image score="4" ref="ms-appx:///Assets/BankStability/BankVegetation/4_C.png" detail="ms-appx:///Assets/BankStability/BankVegetation/4_BW.png">
+        • Little vegetation on bank. Vegetation primarily composed of grass, with some "raw" areas
+      </image>
+      <image score="6" ref="ms-appx:///Assets/BankStability/BankVegetation/6_C.png" detail="ms-appx:///Assets/BankStability/BankVegetation/6_BW.png">
+        • More vegetation on bank. Vegetation composed of some grass and few plants
+      </image>
+      <image score="10" ref="ms-appx:///Assets/BankStability/BankVegetation/10_C.png" detail="ms-appx:///Assets/BankStability/BankVegetation/10_BW.png">
+        • Vegetation densly covers bank. Vegetation composed of trees, plants, grass.
+      </image>
+    </feature>
+    
+    <feature name="ErodedAreas">
+      <image score="0" ref="ms-appx:///Assets/BankStability/ErodedAreas/0_C.png" detail="ms-appx:///Assets/BankStability/ErodedAreas/0_BW.png">
+        • Very uneven bank slope (Many cuts/grooves )
+        • Very steep bank slope
+      </image>
+      <image score="4" ref="ms-appx:///Assets/BankStability/ErodedAreas/4_C.png" detail="ms-appx:///Assets/BankStability/ErodedAreas/4_BW.png">
+        • Somewhat uneven bank slope (Some cuts/groooves)
+        • Somewhat steep bank slope
+      </image>
+      <image score="6" ref="ms-appx:///Assets/BankStability/ErodedAreas/6_C.png" detail="ms-appx:///Assets/BankStability/ErodedAreas/6_BW.png">
+        • Moderately uneven bank slope (few cuts/grooves)
+        • Moderate bank slope
+      </image>
+      <image score="10" ref="ms-appx:///Assets/BankStability/ErodedAreas/10_C.png" detail="ms-appx:///Assets/BankStability/ErodedAreas/10_BW.png">
+        • Most even bank slope (no cuts grooves)
+        • Gentle or gradual bank slope
+      </image>
+    </feature>
+    
+    <feature name="ExposedTreeRoots">
+      <image score="0" ref="ms-appx:///Assets/BankStability/ExposedTreeRoots/0_C.png" detail="ms-appx:///Assets/BankStability/ExposedTreeRoots/0_BW.png">
+        • Most exposed tree roots
+      </image>
+      <image score="4" ref="ms-appx:///Assets/BankStability/ExposedTreeRoots/4_C.png" detail="ms-appx:///Assets/BankStability/ExposedTreeRoots/4_BW.png">
+        • Many exposed tree roots
+      </image>
+      <image score="6" ref="ms-appx:///Assets/BankStability/ExposedTreeRoots/6_C.png" detail="ms-appx:///Assets/BankStability/ExposedTreeRoots/6_BW.png">
+        • Few exposed tree roots
+      </image>
+      <image score="10" ref="ms-appx:///Assets/BankStability/ExposedTreeRoots/10_C.png" detail="ms-appx:///Assets/BankStability/ExposedTreeRoots/10_BW.png">
+        • No exposed tree roots
+      </image>
+    </feature>
+  </protocol>
+</root>

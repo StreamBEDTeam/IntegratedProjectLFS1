@@ -1,0 +1,52 @@
+﻿#layoutRoot {
+    width: auto;
+    height: auto;
+    background-color: #efefef;
+    overflow: auto;
+    display: inline-block;
+}
+
+.button {
+    background-color: #ededed;
+    border: none;
+    color: black;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    height: 64px;
+    width: 200px;
+}
+
+.roundButton {
+    border-radius: 30px;
+}
+
+.textContent {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+}
+
+.mainContent {
+    font-size: 60px;
+    text-align: center;
+    width: 65%;
+    height: 56%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 112px;
+}
+
+#nextButton {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 48px;
+}

@@ -17,9 +17,44 @@ public class ExitHotspot : Hotspot
     {
         //Map feature name in Unity to Keyword in Backend
         var keywordMap = new Dictionary<string, Keyword>();
+
+
+        
+       keywordMap["CobbleNone"] = EpifaunalSubstrateModel.Keywords.Cobble;
         keywordMap["CobbleSome"] = EpifaunalSubstrateModel.Keywords.Cobble;
-        keywordMap["SteepBank"] = BankStabilityModel.Keywords.SteepBank;
-        keywordMap["GentlySlopingBank"] = BankStabilityModel.Keywords.GentlySlopingBank;
+
+       keywordMap["SnagsNone"] = EpifaunalSubstrateModel.Keywords.SnagsLogs;
+        keywordMap["SnagsSome"] = EpifaunalSubstrateModel.Keywords.SnagsLogs;
+
+        keywordMap["VegNone"] = EpifaunalSubstrateModel.Keywords.UnderwaterVegetation;
+        keywordMap["VegSome"] = EpifaunalSubstrateModel.Keywords.UnderwaterVegetation;
+
+        //keywordMap["UndercutNone"] = EpifaunalSubstrateModel.Keywords.UndercutBanks;
+        keywordMap["UndercutSome"] = EpifaunalSubstrateModel.Keywords.UndercutBanks;
+
+
+        keywordMap["SlopeSteep"] = BankStabilityModel.Keywords.BankSlope;
+        keywordMap["SlopeMedium"] = BankStabilityModel.Keywords.BankSlope;
+        keywordMap["SlopeGentle"] = BankStabilityModel.Keywords.BankSlope;
+
+       //**** keywordMap["VegNone"] = BankStabilityModel.Keywords.BankVegetation;
+        keywordMap["VegGrass"] = BankStabilityModel.Keywords.BankVegetation;
+        keywordMap["VegPlants"] = BankStabilityModel.Keywords.BankVegetation;
+
+        keywordMap["RootsNone"] = BankStabilityModel.Keywords.ExposedTreeRoots;
+        keywordMap["RootsSome"] = BankStabilityModel.Keywords.ExposedTreeRoots;
+
+       keywordMap["CrumblingNone"] = BankStabilityModel.Keywords.BankFailure;
+        keywordMap["CrumblingSome"] = BankStabilityModel.Keywords.BankFailure;
+
+
+
+
+     //   keywordMap["ErodedSome"] = BankStabilityModel.Keywords.ErodedAreas;
+        //keywordMap[" "] = BankStabilityModel.Keywords.ExposedTreeRoots;
+        //keywordMap[" "] = BankStabilityModel.Keywords.BankFailure;
+
+        //keywordMap[""]
 
         /*
          * EpifaunalSubstrateModel
