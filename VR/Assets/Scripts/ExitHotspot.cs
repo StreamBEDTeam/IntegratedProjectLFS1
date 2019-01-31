@@ -26,20 +26,19 @@ public class ExitHotspot : Hotspot
        keywordMap["SnagsNone"] = EpifaunalSubstrateModel.Keywords.SnagsLogs;
         keywordMap["SnagsSome"] = EpifaunalSubstrateModel.Keywords.SnagsLogs;
 
-        keywordMap["VegNone"] = EpifaunalSubstrateModel.Keywords.UnderwaterVegetation;
-        keywordMap["VegSome"] = EpifaunalSubstrateModel.Keywords.UnderwaterVegetation;
+        keywordMap["WaterVegNone"] = EpifaunalSubstrateModel.Keywords.UnderwaterVegetation;
+        keywordMap["WaterVegSome"] = EpifaunalSubstrateModel.Keywords.UnderwaterVegetation;
 
-        //keywordMap["UndercutNone"] = EpifaunalSubstrateModel.Keywords.UndercutBanks;
+        keywordMap["UndercutNone"] = EpifaunalSubstrateModel.Keywords.UndercutBanks;
         keywordMap["UndercutSome"] = EpifaunalSubstrateModel.Keywords.UndercutBanks;
-
 
         keywordMap["SlopeSteep"] = BankStabilityModel.Keywords.BankSlope;
         keywordMap["SlopeMedium"] = BankStabilityModel.Keywords.BankSlope;
         keywordMap["SlopeGentle"] = BankStabilityModel.Keywords.BankSlope;
 
-       //**** keywordMap["VegNone"] = BankStabilityModel.Keywords.BankVegetation;
-        keywordMap["VegGrass"] = BankStabilityModel.Keywords.BankVegetation;
-        keywordMap["VegPlants"] = BankStabilityModel.Keywords.BankVegetation;
+        keywordMap["BankVegNone"] = BankStabilityModel.Keywords.BankVegetation;
+        keywordMap["BankVegGrass"] = BankStabilityModel.Keywords.BankVegetation;
+        keywordMap["BanksVegPlants"] = BankStabilityModel.Keywords.BankVegetation;
 
         keywordMap["RootsNone"] = BankStabilityModel.Keywords.ExposedTreeRoots;
         keywordMap["RootsSome"] = BankStabilityModel.Keywords.ExposedTreeRoots;

@@ -9,6 +9,7 @@ public class SummaryItem : MonoBehaviour
     public SummaryCount Count;
     public string FeatureName;
     public float widthPerCount=10f;
+    public int tagcount;
 
     private GameStateHandle gameState;
     //TextAlignment 
@@ -21,7 +22,7 @@ public class SummaryItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var tagcount = gameState.Instance.getTagCount(FeatureName);
+        //tagcount = gameState.Instance.getTagCount(FeatureName);
         //Bar.localScale = new Vector3(tagcount * widthPerCount, Bar.localScale.y, Bar.localScale.z);
         Bar.sizeDelta = new Vector2(tagcount * widthPerCount, Bar.sizeDelta.y);
         Count.Text.text = string.Format("{0}", tagcount);

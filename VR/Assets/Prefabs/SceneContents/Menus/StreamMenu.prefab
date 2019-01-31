@@ -858,7 +858,7 @@ PrefabInstance:
     - target: {fileID: 1397386906080323907, guid: 263ac3586fd938a45b453c4c26e184e1,
         type: 3}
       propertyPath: FeatureName
-      value: VegNone
+      value: WaterVegNone
       objectReference: {fileID: 0}
     - target: {fileID: 1397386906080323907, guid: 263ac3586fd938a45b453c4c26e184e1,
         type: 3}
@@ -1155,15 +1155,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.99999994
       objectReference: {fileID: 0}
-    - target: {fileID: 1397386906059758058, guid: 263ac3586fd938a45b453c4c26e184e1,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1397386906080323907, guid: 263ac3586fd938a45b453c4c26e184e1,
         type: 3}
       propertyPath: FeatureName
-      value: VegSome
+      value: WaterVegSome
       objectReference: {fileID: 0}
     - target: {fileID: 1397386906080323907, guid: 263ac3586fd938a45b453c4c26e184e1,
         type: 3}
@@ -1174,6 +1169,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: Some Observed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1397386906059758058, guid: 263ac3586fd938a45b453c4c26e184e1,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 263ac3586fd938a45b453c4c26e184e1, type: 3}
@@ -1310,11 +1310,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.99999994
       objectReference: {fileID: 0}
-    - target: {fileID: 1397386906059758058, guid: 263ac3586fd938a45b453c4c26e184e1,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1397386906080323907, guid: 263ac3586fd938a45b453c4c26e184e1,
         type: 3}
       propertyPath: FeatureName
@@ -1329,6 +1324,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: Some Observed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1397386906059758058, guid: 263ac3586fd938a45b453c4c26e184e1,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 263ac3586fd938a45b453c4c26e184e1, type: 3}
@@ -1465,11 +1465,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.99999994
       objectReference: {fileID: 0}
-    - target: {fileID: 1397386906059758058, guid: 263ac3586fd938a45b453c4c26e184e1,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1397386906080323907, guid: 263ac3586fd938a45b453c4c26e184e1,
         type: 3}
       propertyPath: FeatureName
@@ -1484,6 +1479,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: Some Observed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1397386906059758058, guid: 263ac3586fd938a45b453c4c26e184e1,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 263ac3586fd938a45b453c4c26e184e1, type: 3}
