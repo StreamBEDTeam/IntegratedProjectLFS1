@@ -26,4 +26,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Onboarding/OnboardingS5.unity
     guid: dffa3a93934b32748aabbe96bfd4eb46
+  - enabled: 1
+    path: Assets/Scenes/S2_MD/SM_1.unity
+    guid: 4d2a992b52e61d1498ef1df6545f70dd
+  - enabled: 1
+    path: Assets/Scenes/S2_MD/SM_2.unity
+    guid: f34f023ab5b7b2943bc6a831f9aa9afa
+  - enabled: 1
+    path: Assets/Scenes/S2_MD/SM_3.unity
+    guid: a90e18ac95c55c446903df64d4a33646
+  - enabled: 1
+    path: Assets/Scenes/S2_MD/SM_4.unity
+    guid: 8303cb3a7c840304c904623001e71115
+  - enabled: 1
+    path: Assets/Scenes/S2_MD/SM_5.unity
+    guid: 34e8cdbd937dde84c80194f2fbe0e20f
+  - enabled: 1
+    path: Assets/Scenes/S2_MD/SM_6.unity
+    guid: 27e4d5681c8145a47bad400b9da9ec9a
   m_configObjects: {}
