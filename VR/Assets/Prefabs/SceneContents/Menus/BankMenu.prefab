@@ -467,7 +467,7 @@ PrefabInstance:
     - target: {fileID: 1397386906059758061, guid: 263ac3586fd938a45b453c4c26e184e1,
         type: 3}
       propertyPath: m_Text
-      value: Plants and Trees
+      value: Grass, Plants, & Trees
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 263ac3586fd938a45b453c4c26e184e1, type: 3}
