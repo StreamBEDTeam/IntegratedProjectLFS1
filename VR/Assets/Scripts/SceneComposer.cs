@@ -22,7 +22,7 @@ public class SceneComposer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        arduinoSerial.SendText("Unity says Hello!");
     }
 
     public void onSceneLoaded(string sceneName)
